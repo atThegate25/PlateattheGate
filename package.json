@@ -1,16 +1,24 @@
 {
-  "name": "PlateattheGate",
-  "version": "1.0.0",
-  "description": "Feeding you at the gate",
-  "main": "server.js",
-  "repository": "https://github.com/atThegate25/PlateattheGate.git",
-  "author": "TeamAtTheGate",
-  "license": "MIT",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.3",
-    "mongoose": "^5.0.15",
-    "mongoose-unique-validator": "^2.0.0"
-  }
+    "name": "PlateattheGate",
+    "version": "1.0.0",
+    "description": "Feeding you at the gate",
+    "main": "server.js",
+    "scripts": {
+        "server": "node server.js",
+        "client": "cd client && npm run start",
+        "start": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
+        "build": "cd client && npm run build",
+        "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "https://github.com/atThegate25/PlateattheGate.git",
+    "author": "TeamAtTheGate",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "body-parser": "^1.18.2",
+        "express": "^4.16.3",
+        "mongoose": "^5.0.15",
+        "mongoose-unique-validator": "^2.0.0"
+    }
 }
