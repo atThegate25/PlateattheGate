@@ -1,0 +1,9 @@
+{
+  "name": "PlateattheGate",
+  "version": "1.0.0",
+  "description": "Feeding you at the gate",
+  "main": "server.js",
+  "repository": "https://github.com/atThegate25/PlateattheGate.git",
+  "author": "TeamAtTheGate",
+  "license": "MIT"
+}
